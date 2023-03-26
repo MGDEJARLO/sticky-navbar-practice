@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.top-container{
+    background-image: url("https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: skyblue;
+    text-shadow: 0 0 15px rgba(0, 0 , 0, 0.5);
+    font-size: 50px;
+    font-family: Impact,  'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s;
+}
+
+.navbar a img{
+    margin-top: -8px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: darkblue;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: darkblue;
+}
+
+
+.navbar.active{
+    background-color: navy;
+
+}
+
+.navbar.active ul li a{
+    color: aliceblue;
+}
